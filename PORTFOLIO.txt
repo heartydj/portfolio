@@ -1,0 +1,267 @@
+html:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Portfolio</title>
+<link rel="stylesheet" href="port.css">
+</head>
+<body>
+<header>
+<div class="header-content">
+<h1>Dharani Jayan</h1>
+<p>UI/UX Designer & Front-End Developer</p>
+<nav>
+<ul>
+<li><a href="#about">About Me</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<section id="about">
+<h2>About Me</h2>
+<div class="about-container">
+<p>Hello! I'm Dharani Jayan, a passionate UI/UX Designer and
+Front-End Developer with a knack for creating elegant, user-friendly
+designs. I love transforming complex problems into simple, beautiful, and
+intuitive designs. When I'm not coding or pushing pixels, you'll find me
+sketching or working on my photography skills.</p>
+<img src="profile.jpg" alt="Profile Image"
+
+class="profile-image">
+
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects-container">
+<div class="project">
+<h3>Project: Login Page Design</h3>
+<p>Designed a user-friendly and visually appealing login page
+using Figma. The goal was to create a clean, intuitive interface that
+enhances the user experience by providing easy navigation and
+accessibility. This project involved user research, wireframing,
+prototyping, and usability testing to ensure a seamless login process.</p>
+
+<p>Tools Used
+Design Software: Figma<br>
+Prototyping: Figma
+User Testing: UsabilityHub</p>
+<p><a
+href="https://www.linkedin.com/posts/dharani-jayan-e-6544432b7_codsoft-int
+ernship-in-uiux-on-login-page-activity-7179781237819981824-A2RP?utm_source
+=share&utm_medium=member_desktop ">view project</a></p></p>
+
+</div>
+<div class="project">
+<h3>Project Name: E-commerce Website UI</h3>
+<p>Designed the user interface for an e-commerce website,
+focusing on creating a seamless shopping experience. Worked on the visual
+design, information architecture, and usability testing.<br><br>
+Tools Used: Sketch, Adobe Photoshop</p>
+<p><a
+href="https://www.linkedin.com/posts/dharani-jayan-e-6544432b7_codsoft-act
+ivity-7179710240811065344-5GIk?utm_source=share&utm_medium=member_desktop
+">view project</a></p></p>
+
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>If you'd like to get in touch, feel free to reach out via email
+
+or connect with me on LinkedIn. I'm always open to discussing new
+projects, creative ideas, or opportunities to be part of your vision.</p>
+
+<p>Email: <a
+
+href="mailto:dharanijayan@gmail.com">dharanijayan@gmail.com</a></p>
+
+<p>LinkedIn: <a
+
+href="https://www.linkedin.com/in/dharani-jayan-e-6544432b7"
+target="_blank">linkedin.com</a></p>
+
+<p>Instagram: <a
+
+href="https://www.instagram.com/dj..14_?igsh=bmc3YXhwNGRjNW9q"
+target="_blank">dj..14_</a></p>
+</section>
+<button onclick="topFunction()" id="scrollBtn" title="Go to
+top">↑</button>
+
+<footer>
+<p>&copy;THANK YOU</p>
+</footer>
+<script>
+//Get the button
+var mybutton = document.getElementById("scrollBtn");
+// When the user scrolls down 20px from the top of the document,
+
+show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+if (document.body.scrollTop > 20 ||
+document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+
+} else {
+mybutton.style.display = "none";
+}
+}
+// When the user clicks on the button, scroll to the top of the
+
+document
+
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome,
+
+Firefox, IE, and Opera
+
+}
+</script>
+</body>
+</html>
+
+Css:
+
+body {
+font-family: 'Arial', sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0,
+0, 0.5)),
+url('https://img.freepik.com/free-vector/abstract-geometric-wireframe-back
+ground_52683-59421.jpg') no-repeat center center fixed;
+background-size: cover;
+color: #fff;
+}
+
+header {
+text-align: center;
+padding: 4rem 0;
+
+background: rgba(0, 0, 0, 0.7);
+}
+
+.header-content h1 {
+font-size: 3rem;
+margin-bottom: 0.5rem;
+}
+
+.header-content p {
+font-size: 1.5rem;
+margin-bottom: 2rem;
+}
+
+nav ul {
+list-style: none;
+padding: 0;
+}
+
+nav ul li {
+display: inline;
+margin: 0 1rem;
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+font-size: 1.2rem;
+transition: color 0.3s;
+}
+
+nav ul li a:hover {
+
+color: #ffd700;
+}
+
+section {
+padding: 4rem 2rem;
+margin: 1rem auto;
+max-width: 1000px;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.profile-image {
+max-width: 200px;
+border-radius: 50%;
+margin-left: 2rem;
+border: 5px solid #fff;
+}
+
+.projects-container {
+display: flex;
+flex-wrap: wrap;
+gap: 2rem;
+}
+
+.project {
+flex: 1;
+min-width: 250px;
+background: rgba(0, 0, 0, 0.7);
+padding: 2rem;
+border-radius: 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project h3 {
+margin-top: 0;
+color: #ffd700;
+}
+
+.project p {
+margin-bottom: 0;
+}
+#scrollBtn {
+display: none; /* Hidden by default */
+position: fixed; /* Fixed position */
+bottom: 20px; /* Place the button 20px from the bottom */
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap other elements */
+font-size: 18px; /* Increase font size */
+background-color: #333; /* Dark background */
+color: white; /* White text */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+cursor: pointer; /* Add a pointer cursor on hover */
+padding: 15px; /* Some padding */
+border-radius: 10px; /* Rounded corners */
+transition: background-color 0.3s; /* Smooth background color
+transition */
+}
+
+#scrollBtn:hover {
+background-color: #555; /* Add a dark-grey background on hover */
+}
+footer {
+background: rgba(0, 0, 0, 0.7);
+color: #fff;
+padding: 1rem 0;
+text-align: center;
+font-size: 0.9rem;
+margin-top: 2rem;
+}
+
+footer p {
+margin: 0;
+}
